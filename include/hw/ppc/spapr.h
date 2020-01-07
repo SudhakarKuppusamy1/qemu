@@ -258,6 +258,8 @@ struct SpaprMachineState {
 
     /* Set by -boot */
     char *boot_device;
+    bool secure_boot;
+    uint8_t secure_boot_level;
 
     /*< public >*/
     char *kvm_type;
